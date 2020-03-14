@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="That's a landing page for our first MATRIX Labs Hackathon">
+  <meta name="author" content="Matrix Labs Brasil">
+
+  <title>REGISTRATION</title>
+  <!--registration changes 137-->
+
+  <!-- Bootstrap Core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/everloop.png" type="image/x-icon">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="/css/grayscale.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+  <style type="text/css" id="custom-fonts">
+    /* custom fonts */
+    @font-face {
+      font-family: 'Roboto Regular';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto Medium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Roboto Bold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Apercu Regular';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Apercu Medium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Apercu Bold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Sharp Sans Regular';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Sharp Sans Medium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Sharp Sans Bold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'FreigSanProBold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'FreigSanProMed';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'FaktSlabProMedium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');
+    }
+  </style>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<style>
+  input {
+    border-radius: 15px;
+    font: bold;
+    font-size: 15px;
+    background-color: rgba(252, 246, 246, 0.966);
+  }
+
+  input:hover {
+    background-color: rgba(12, 113, 245, 0.658);
+    color: black;
+  }
+</style>
+
+<body style="background-color: rgb(0, 0, 0);padding-top:10px;color:black;">
+  <h1 style="text-align: center;">REGISTRATION FORM</h1>
+  <form action="/reg2" method="POST" style="color:black">
+    <div style="border:1px black solid;text-align:center;margin:2% 20% 2% 20%;text-align: center;">
+      <div>
+        <div class="control-group">
+          <div class="controls">
+            <input class="" type="text" id="text-name"
+              style="text-align:center;width:40%;height:45px;margin-bottom:5%;margin-top:5%;color:black;"
+              name="TeamName" placeholder="* team name..." required />
+
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <input class="" type="text" id="name"
+              style="text-align:center;width:40%;height:45px;margin-bottom:5%;color:black;margin-right:2% ;"
+              name="name1" placeholder="* participant 1 name..." required />
+            <input class="" type="text" id="name"
+              style="text-align:center;color:black;width:40%;height:45px;margin-bottom:5%;margin-right:2%" name="name2"
+              placeholder="* participant 2 name..." required />
+          </div>
+        </div>
+
+        <div class="control-group">
+          <div class="controls">
+            <input class="" type="text" id="age"
+              style="text-align:center;color:black;width:40%;height:45px;margin-bottom:5%;margin-right:2% " name="age1"
+              placeholder="* enter your age." required />
+            <input class="" type="text" id="age"
+              style="text-align:center;color:black;width:40%;height:45px;margin-bottom:5%;margin-right:2% " name="age2"
+              placeholder="* enter your age." required />
+
+
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="rs-select2 js-select-simple select--no-search">
+            <select id="gender" name="gender1"
+              style="color:black;width:40%;height:45px;margin-bottom:5%;margin-right: 2%;border-radius: 15px;">
+              <option disabled="disabled" selected="selected">Participant 1 Gender</option>
+              <option style="color:black;">Male</option>
+              <option style="color:black;">Female</option>
+              <option style="color:black;">Other</option>
+            </select>
+            <select id="gender" name="gender2"
+              style="width:40%;text-align:center;height:45px;margin-bottom:5%;margin-right: 2%;border-radius: 15px;">
+              <option disabled="disabled" selected="selected">participant 2 Gender</option>
+              <option style="color:black;">Male</option>
+              <option style="color:black;">Female</option>
+              <option style="color:black;">Other</option>
+            </select>
+
+            <div class="select-dropdown"></div>
+          </div>
+
+        </div>
+        <div class="control-group">
+          <div class="rs-select2 js-select-simple select--no-search">
+            <select id="Tshirtsize" name="Tshirtsize1"
+              style="width:40%;text-align:center;color:black;height:45px;margin-bottom:5%;margin-right: 2%;border-radius: 15px;">
+              <option disabled="disabled" selected="selected">Participanr 1 Tshirtsize</option>
+              <option style="color:black;">S</option>
+              <option style="color:black;">M</option>
+              <option syle="color:black;">L</option>
+              <option style="color:black;">Xl</option>
+              <option style="color:black;">XXL</option>
+            </select>
+            <select id="Tshirtsize" name="Tshirtsize2"
+              style="width:40%;height:45px;color:black;margin-bottom:5%;text-align:center;margin-right: 2%; border-radius: 15px;">
+              <option disabled="disabled" selected="selected">participant 2 Tshirtsize</option>
+              <option style="color:black;">S</option>
+              <option style="color:black;">M</option>
+              <option style="color:black;">L</option>
+              <option style="color:black;">Xl</option>
+              <option style="color:black;">XXL</option>
+            </select>
+
+            <div class="select-dropdown"></div>
+          </div>
+
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <input class="" type="email"
+              style="width:40%;color:black;height:45px;margin-bottom:5%;text-align:center;margin-right: 2%;"
+              name="email1" id="email" placeholder="* Your email..." required />
+            <input class="" type="email"
+              style="color:black;width:40%;height:45px;text-align:center;margin-bottom:5%;margin-right: 2%;"
+              name="email2" id="email" placeholder="* Your email..." required />
+
+
+          </div>
+        </div>
+        <div class="control-group">
+          <div class="controls">
+            <input class="" type="text" id="phno"
+              style="width:40%;color:black;text-align:center;height:45px;margin-bottom:5%;" name="phoneNo"
+              placeholder="* enter your phone number." required />
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="control-group">
+        <div class="controls">
+          <button type="submit" id='sub'
+            style="width:20%;color:black;text-align:center;height:4em;margin-bottom:5%;border-radius: 15px;">Submit</button>
+        </div>
+      </div>
+      <style>
+        #sub:hover {
+          background-color: green;
+          color: black;
+        }
+
+        #phno:hover,
+        #email:hover,
+        #age:hover,
+        #gender:hover,
+        #name:hover,
+        #text-name:hover {
+          border: 3px black solid;
+        }
+      </style>
+    </div>
+  </form>
+
+</body>
+<footer style="height:40px;padding-top:0px;padding-bottom: 0px;">
+  <div class="container text-center">
+    <p>Copyright &copy;2020 innovathon</p>
+  </div>
+</footer>
+
+<!-- jQuery -->
+<script src="vendor/jquery/jquery.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe7xQb1YWBLPDqFYAKE4G8_ysGyfuYyPg"></script>
+
+<!-- Theme JavaScript -->
+<script src="/js/grayscale.min.js"></script>
+<script src="/main-bundled.js"></script>
+
+</html>

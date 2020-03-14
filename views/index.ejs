@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="That's a landing page for our first MATRIX Labs Hackathon">
+  <meta name="author" content="Matrix Labs Brasil">
+
+  <title>INNOVATHON-2.O</title>
+  <!--registration changes 137-->
+
+  <!-- Bootstrap Core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+  <!-- Theme CSS -->
+  <link href="/css/grayscale.min.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet">
+
+  <style type="text/css" id="custom-fonts">
+    /* custom fonts */
+    @font-face {
+      font-family: 'Roboto Regular';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoRegular.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Roboto Medium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoMedium.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Roboto Bold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/RobotoBold.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Apercu Regular';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuregularwebfont.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Apercu Medium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercumediumwebfont.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Apercu Bold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/apercuboldwebfont.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Sharp Sans Regular';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss400.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Sharp Sans Medium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss500.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Sharp Sans Bold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.eot') format('eot'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/213/2136839/fonts/ss600.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'FreigSanProBold';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProBold.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'FreigSanProMed';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.svg') format('svg'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FreigSanProMed.otf') format('opentype');
+    }
+
+    @font-face {
+      font-family: 'FaktSlabProMedium';
+      src: url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.woff') format('woff'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.ttf') format('truetype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.otf') format('opentype'), url('https://s3.amazonaws.com/s3.clients.splashthat.com/img/events/id/251/2513351/fonts/FaktSlabPro-Medium.eot') format('eot');
+    }
+  </style>
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+  <!-- Navigation -->
+  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+          Menu <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand page-scroll text-center" href="#page-top">
+          <p href="#page-top" class="page-scroll" style="color:white;">Innovathon2.O</p>
+        </a>
+
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+        <ul class="nav navbar-nav">
+          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>
+          <li style="font-family:fericode">
+            <a class="page-scroll" href="#about">ABOUT</a>
+          </li>
+          <li style="font-family:fericode">
+            <a class="page-scroll" href="#generalRules">FAQS</a>
+          </li>
+          <li style="font-family:fericode">
+            <a class="page-scroll" href="#schedule">PRIZES</a>
+          </li>
+          <li style="font-family:fericode">
+            <a class="page-scroll" href="#projects">SPONSERS</a>
+          </li>
+          <li style="font-family:fericode">
+            <a class="page-scroll" href="#location">CONTACT</a>
+          </li>
+          <li style="font-family:fericode">
+            <a class="page-scroll" href="#contact">TEAM</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!-- Intro Header -->
+  <header class="intro">
+    <div class="intro-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-12">
+            <h1 class="brand-heading" style="font-family:fericode">INNOVA - Thon 2.O</h1>
+            <p> <img src="/img/loc6.png" width="40px" height="40px">JBIET HYDERABAD</p>
+            <p class="intro-text" style="font-family:Roboto">Telangana's largest Entrepreneurial Hackathon.</p>
+            <a class="page-scroll" href="#registerlink"><button
+                style="border: 1px solid white;border-radius: 0.5em;width: 100px;font-size:bold;background-color:black;color:white;height: 40px;">Apply</button></a><br>
+            <a href="#about" class="btn btn-circle page-scroll">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <!--<p><form method="POST" action="/reggg"><button type="submit">register</button></form></p>-->
+  <section id="about" class="container content-section text-center">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h2 style="font-family:fericode">WHAT IS INNOVA - Thon 2.O</h2>
+        <p style="font-family:Roboto"><b>INNOVA-Thon 2.0</b> is Telangana’s largest 24-hours entrepreneurial hackathon
+          organised by JB Institute of Engineering and Technology.
+          This event transforms your ideas and makes them startup ready. Students from all over the country can
+          participate in this event. This is an excellent opportunity to showcase your knowledge and skills to the
+          industrial specialists. The participants will also get an opportunity to develop and support their ideas and
+          convert them into reality.
+        </p>
+        <p>
+
+
+
+          <div class="modal-footer">
+            </br>
+          </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div>
+      <p style="text-align:center;">
+        <h2 style="font-family:fericode">WHAT HAPPENS AT INNOVA-Thon 2.0?</h2>
+        <p style="font-family:Roboto;">
+          There will be 2 chief guests and 3 mentors/judges.
+          Participants must form teams of three.
+          Each team is given a chart with 9 business parameters which need to be satisfied.
+          The ideas would be from different themes/sectors such as transportation, healthcare, food, security, etc.
+
+
+        </p>
+    </div>
+    <div>
+      <p>
+        <h2 style="font-family: fericode;"> HOW IT WORKS
+        </h2>
+        <p style="font-family:Roboto;">During the entire period of the hackathon, participants will interact with
+          mentors and get their suggestions on how to improve their proposal under each parameter.
+          Each parameter will be assessed for a maximum of 10 points by the experts.
+          The mentors will grade the participants for every round accordingly and at the end of the 24th hour, the team
+          with the most points, places first.
+        </p>
+      </p>
+    </div>
+
+
+
+    <div class="modal-footer">
+      </br>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!--schedule section-->
+    <!--<section id="schedule" class="content-section text-center">-->
+    <section id="" class="content-section text-center">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h1>Timeline</h1>
+            <img src="/img/agenda.jpg" width="100%" height="800px">
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      </div>
+      </div>
+    </section>
+
+    </div>
+    <h2 style="padding-left: 5%;">Registrations are open</h2>
+
+    <span id="registerlink">
+      <style>
+        .b {
+          margin-bottom: 25px;
+          margin-left: 30%;
+          display: grid;
+          width: 500px;
+          grid-template-columns: 50% 50%;
+        }
+      </style>
+      <form class="b" method="POST" action="/registration1">
+        <div>
+          <img src="/img/user1.png" style="border-radius: 50%;" width="100px" height="100px">
+        </div>
+        <div>
+          <br>
+
+          <button class="btn1">apply -for one 350rs/- </button>
+        </div>
+      </form>
+      <form class="b" method="POST" action="/registration2">
+        <div>
+          <img src="/img/user2.png" style="border-radius: 50%;" width="100px" height="100px">
+        </div>
+        <div>
+          <br>
+          <button class="btn1">apply -for two 700rs/-</button>
+        </div>
+      </form>
+      <form class="b" method="POST" action="/registration3">
+        <div>
+          <img src="/img/user3.png" style="border-radius: 50%;" width="100px" height="100px">
+        </div>
+        <div>
+          <br>
+          <button class="btn1">apply -for three 1000rs/-</button>
+        </div>
+      </form>
+      <h3>!hurry above price for first 150 members</h3>
+      <h3> early bird gets the price.</h3>
+    </span>
+
+
+    <!-- General Rules Section -->
+
+    <style>
+      .btn1 {
+        width: 200px;
+        height: 45px;
+        background-color: rgb(17, 104, 36);
+        color: white;
+        font-size: 15px;
+        opacity: 0.5em;
+        margin-bottom: 3%;
+        border: 1px white solid;
+        border-radius: 5px;
+      }
+
+      .btn1:hover {
+        width: 250px;
+        border: 2px white solid;
+        background-color: green;
+      }
+
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+
+      .dropdown-content {
+        display: none;
+        color: black;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        z-index: 1;
+      }
+
+      .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: black;
+        color: white;
+        line-height: 25px;
+      }
+      .dropdown-content{
+        line-height: 30px;
+        padding: 20px;
+      }
+    </style>
+    <section id="generalRules" class="darker-black content-section text-center " style="background-color: black;">
+      <div class="download-section" style="padding:50px">
+        <div class="container" style="text-align: center;">
+          <div class="col-lg-8 col-lg-offset-2">
+            <span class="" style="font-family:roboto;font-size: 40px; padding-bottom:100px;">Frequently Asked questions?</span><br>
+            <div class="dropdown">
+              <span class="" style="font-family:roboto;font-size: 25px;">what is the team size?</span><br>
+              <div class="dropdown-content" style="text-align: center; border-radius: 20px;">
+                <p style="font-family:roboto;font-size: 15px;">The team size can range from 1 to 3.</p>
+              </div>
+            </div>
+            <br>
+            <div class="dropdown" style="text-align: center; border-radius: 20px;">
+              <span style="font-family:roboto;font-size: 25px;">How to reach INNOVAThon/JBIET-Hyderabad?</span><br>
+              <div class="dropdown-content" style="text-align: center;padding-bottom: 5px; border-radius: 20px;">
+                <p style="font-family:roboto;font-size: 15px;">Hyderabad is well connected to all major cities of india
+                  by train, bus.Mehdipatnam,Gachibowli are 30-40 min away from JBIET</p>
+              </div>
+            </div>
+
+            <br>
+            <div class="dropdown" style="text-align: center;">
+              <span style="font-family:roboto;font-size: 25px;">Are there any prizes for Girls Team?</span>
+              <div class="dropdown-content" style="text-align: center; border-radius: 20px;">
+                <p style="font-family:roboto;font-size: 15px;padding-bottom: 5px;">yes,there is a prize for the best
+                  girl team.</p>
+              </div>
+            </div>
+
+            <br>
+            <div class="dropdown" style="text-align: center;">
+              <span style="font-family:roboto;font-size: 25px;">what are the things participant have to bring?
+              </span><br>
+              <div class="dropdown-content" style="text-align: center; border-radius:20px;">
+                <p style="font-family:roboto;font-size: 15px;padding-bottom: 5px; border-radius: 20px;">Laptop,chargers
+                  & if possible you can bring your own internet.However, we would provide the internet.</p>
+              </div>
+            </div>
+
+            <br>
+            <div class="dropdown" style="text-align: center;">
+              <span style="font-family:roboto;font-size: 25px; border-radius: 20px;">what if i have never been to a hackathon
+                before?</span><br>
+              <div class="dropdown-content" style="text-align: center; border-radius: 20px;">
+                <p style="font-family:roboto;font-size: 15px;padding-bottom: 5px; border-radius: 20px;">then we are so
+                  glad that INNOVAThon would be your first hackathon. its helpful to have some experience but its not a
+                  requirement.we will have mentors,talks to help you with your idea.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="content-section text-center">
+
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <div style="width:200px;height:200px;border:1px white solid">
+
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" class="darker-black content-section">
+      <div class="download-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2 class="text-center" style="font-family:fericode">Sponsors</h2>
+
+
+
+
+            <div id="pranitha">
+              <style>
+                * {
+                  box-sizing: border-box;
+                }
+
+                .column {
+                  float: left;
+                  width: 33.33%;
+                  padding: 5px;
+                }
+
+                /* Clearfix (clear floats) */
+                .row::after {
+                  content: "";
+                  clear: both;
+                  display: table;
+                }
+              </style>
+
+              <p></p>
+
+              <div class="row">
+                <div class="column">
+                  <img src="/img/" alt="Snow" style="width:100%" width=200 height=300>
+                  <p style="font-family:roboto"></p>
+                </div>
+                <div class="column">
+                  <img src="img_forest.jpg" alt="Forest" style="width:100%">
+                  <p style="font-family:roboto"></p>
+                </div>
+                <div class="column">
+                  <img src="img_mountains.jpg" alt="Mountains" style="width:100%">
+                  <p style="font-family:roboto"></p>
+                </div>
+              </div>
+
+
+
+    </section>
+    </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="content-section text-center">
+    <div class="download-section">
+      <div class="container">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2 style="font-family:fericode">CONTACT</h2>
+          <img src="/img/jb.png" width="50px" height="50px">&nbsp;
+          <img src="/img/final1.jpg" width="200">
+          <p>
+            <h4 style="font-family:roboto">email:innovathon@jbiet.edu.in
+          </p>
+          <p>phone no :7597464356</p>
+          <p>code of conduct</p>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+  </section>
+  <section id="contact" class="content-section text-center">
+    <div class="download-section">
+
+
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <div id="map1">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.6960350500694!2d78.29558851395562!3d17.330209088112944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb95515c784b7d%3A0x73a884f17edcfeca!2sJ%20B%20Institute%20of%20Engineering%20and%20Technology!5e0!3m2!1sen!2sin!4v1584113489648!5m2!1sen!2sin"
+      width="100%" height="454" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
+  </div>
+  <!-- Footer -->
+  <footer style="height:40px;padding-top:0px;padding-bottom: 0px;">
+    <div class="container text-center">
+      <p style="font-family:Roboto;">Copyright &copy;2020 innovathon2.O</p>
+    </div>
+  </footer>
+
+  <!-- jQuery -->
+  <script src="vendor/jquery/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCe7xQb1YWBLPDqFYAKE4G8_ysGyfuYyPg"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="/js/grayscale.min.js"></script>
+  <script src="/main-bundled.js"></script>
+</body>
+
+</html>
